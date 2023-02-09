@@ -8,75 +8,79 @@
     <style>
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+           
         }
-        #menu {
-            padding-top: 70px;
+        .menu {
+            padding: 20px;
             text-align: center;
         }
-        #con {
-            padding-top: 30px;
+        .row {
+            width: 100%;
         }
         #box {
-            background-color: rgb(222, 136, 25);
-            padding: 0px ;
-            border: 3px solid black;
             text-align: center;
-            height: 150px;
-            width: 400px;
-            overflow: hidden;
+            border: 4px solid black;
+            width:100%;
+            height: 100px;
+            background-color: antiquewhite;
+            margin: auto;
+            margin-bottom: 5px;
         }
-        #subbox {
-            background-color: rgb(243, 55, 8);
-            padding: 0px 0px 0px 0px;
-            border-bottom: 3px solid black;
-            border-left: 3px solid black;
+        #smallbox {
+            margin-left: 80%;
             text-align: center;
-            height: 20;
-            width: 100px;
-            overflow: hidden;
+            background-color: brown;
+            border-bottom: 5px solid black;
+            border-left: 5px solid black;
+            width: 20%;
         }
-        #subboxpad {
-            padding: 0px 10px 10px 300px;
+        @media (min-width: 1200px){
+            .col-lg-4{
+                padding: 10px;
+                float: left;
+                width: 33%
+            }
+        }
+        @media (min-width: 950px) and (max-width: 1199px){
+            .col-mg-4{
+                padding: 10px;
+                float: left;
+                width: 50%
+            }
+            .col-mg-5{
+                padding: 10px;
+                float: left;
+                width: 100%
+            }
         }
     </style>
     </head>
     <body>
-        <div id="menu">
-            <h1>Our Menu</h1>
-        </div>
-        <div id="con">
-            <div id="box">
-                <div id="subboxpad">
-                    <div id="subbox">
-                        <div> Chicken</div>
+        <h1 class="menu"> Our Menu</h1>
+        <div class="row">
+            <div class="col-lg-4 col-mg-4">
+                <div id="box">
+                    <div id="smallbox">
+                        <div>Chicken</div>
                     </div>
+                    <div> Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter</div>
                 </div>
-                <div>The implementation of the page you will be creating should follow the mockup illustrations shown below. You are provided 3 mockups: desktop, tablet, and mobile. Your implementation has to be JUST 1 page, NOT 3 pages. In other words, 
-                    you will be creating a single, responsive page.</div>
             </div>
-        </div>
-        <div id="con">
-            <div id="box">
-                <div id="subboxpad">
-                    <div id="subbox">
-                        <div> Chicken</div>
+            <div class="col-lg-4 col-mg-4">
+                <div id="box">
+                    <div id="smallbox">
+                        <div>Chicken</div>
                     </div>
+                    <div> Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter</div>
                 </div>
-                <div>The implementation of the page you will be creating should follow the mockup illustrations shown below. You are provided 3 mockups: desktop, tablet, and mobile. Your implementation has to be JUST 1 page, NOT 3 pages. In other words, 
-                    you will be creating a single, responsive page.</div>
             </div>
-        </div>
-        <div id="con">
-            <div id="box">
-                <div id="subboxpad">
-                    <div id="subbox">
-                        <div> Chicken</div>
+            <div class="col-lg-4 col-mg-5">
+                <div id="box">
+                    <div id="smallbox">
+                        <div>Chicken</div>
                     </div>
+                    <div> Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter</div>
                 </div>
-                <div>The implementation of the page you will be creating should follow the mockup illustrations shown below. You are provided 3 mockups: desktop, tablet, and mobile. Your implementation has to be JUST 1 page, NOT 3 pages. In other words, 
-                    you will be creating a single, responsive page.</div>
             </div>
         </div>
     </body>
